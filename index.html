@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Probermusic</title>
+    <script src="https://kit.fontawesome.com/5cd688c4de.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Medula+One&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="nav-container">
+        <nav class="nav">
+            <div class="nav-logo"><a href="#">ProberMusic</a></div>
+            <ul class="nav-options">
+                <li class="nav-options__item"><a href="#"><i class="fas fa-home"></i>Inicio</a></li>
+                <li class="nav-options__item"><a href="#about"><i class="far fa-user"></i>Sobre Mi</a></li>
+                <li class="nav-options__item"><a href="#servicies"><i class="fas fa-microphone-alt"></i>Servicios</a></li>
+                <li class="nav-options__item"><a href="#contact-me"><i class="far fa-envelope"></i>Contactame</a></li>
+            </ul>
+            <div class="nav-sound"><i class="fas fa-volume-mute" id="sound"></i></div>
+            <div class="menuResponsive-btn inactive">
+                <span class="btn-line"></span>
+                <span class="btn-line"></span>
+                <span class="btn-line"></span>
+            </div>
+        </nav>
+    </div>
+    <section class="banner-container">
+        <div class="banner-title">
+            <h1>Soy<br>Pro<span class="typing"></span></h1>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="about-container">
+            <img class="abstract-bg" src="img/abstract-bg.svg" alt="Abstract background" loading="lazy">
+            <img class="pablo-img" src="img/pablo.svg" alt="Pablo Robert" loading="lazy">
+            <h3 class="about-title">Sobre <span class="about-title__span">mi</span></h3>
+            <p class="about-text">Hola! Mi nombre es Pablo Robert, inicie este sello discografico con el nombre de ' ProberMusic ' con la intención de acompañar tanto a los artistas que recién esten comenzando como también a aquellos que ya esten consolidados. Estoy apasionado por lo que hago, y pongo a tu disposición toda mi creatividad y conocimiento para sacar lo mejor de ti.<br>
+                Cuento con muchos años dentro del ámbito musical, estudie 6 años en el conservatorio de musical de Manuel Falla donde aprendí teoría musical, composición musical y a tocar mis primeros instrumentos. Fui bajista, violinista, pianista y guitarrista para distintas bandas. Años mas tarde opte por subir de nivel y estudiar Producción Musical, donde encontré mi verdadera pasión y profesión. Además de mi perfil musical, estudie Licenciatura en Marketing para llevar a mis futuros artistas a lo mas alto.</p>
+            <div class="button-container">
+                <div class="button-bg-container">
+                    <img src="img/phone.svg" alt="phone" class="phone-img" loading="lazy">
+                    <a title="Link a lista de reproducción" href="#" class="button-link">Escuchá alguna de mis composiciones</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="servicies-container" id="servicies">
+		<h2 class="servicies-title">Servicios</h2>
+		<ul class="servicies-list">
+			<li class="servicies-item">
+				<i class="fas fa-headphones-alt title-icon"></i>
+				<h3>Producción</h3>
+				<p>Te ayudo a proyectar tus ideas y hacerlas realidad, dandole forma a tus canciones, identidad, y sobre todo el sonido que buscas, algunos de los procesos que se realizan son:<br>
+ 					<i class="fas fa-angle-right"></i> Composición (música y letra).<br>
+ 					<i class="fas fa-angle-right"></i> Grabación de instrumentos.<br>
+ 					<i class="fas fa-angle-right"></i> Grabación de voces.<br>
+				</p>
+			</li>
+			<li class="servicies-item">
+				<i class="fas fa-record-vinyl title-icon"></i>
+				<h3>Mezclas</h3>
+				<p>Tu música pasará al siguiente nivel, entre varios, se realizan estos procesos para lograrlo:<br>
+					<i class="fas fa-angle-right"></i> Limpieza de los audios <br>
+					<i class="fas fa-angle-right"></i> Ajuste de volumenes <br>
+					<i class="fas fa-angle-right"></i> Ecualización sustractiva y aditiva <br>
+					<i class="fas fa-angle-right"></i> Apertura estéreo <br>
+					<i class="fas fa-angle-right"></i> Compresión y la limitación por pistas<br>
+					<i class="fas fa-angle-right"></i> Efectos especiales</p>
+			</li>
+			<li class="servicies-item">
+				<i class="fas fa-search title-icon"></i>
+				<h3>Mastering</h3>
+				<p>En la masterización se revisa toda la mezcla para que pueda ser distribuida en los diferentes formatos y dispositivos comerciales o en servicios de streaming.<br>
+					<i class="fas fa-angle-right"></i> Conseguir un sonido de calidad para poder reproducir en diferentes formatos, aparatos y plataformas. (En su mayoria WAV 16 Bits)<br>
+					<i class="fas fa-angle-right"></i> Lograr un volumen adecuado y competitivo en el mercado<br><br>
+			</li>
+			<li class="servicies-item">
+				<i class="fas fa-comments-dollar title-icon"></i>
+				<h3>Marketing</h3>
+				<p>Te acompaño en la etapa de promoción de tu canción (antes y despues de lanzarla) para tener un mayor alcance y que tu musica suene en todos lados.<br>
+					Para ello se realiza una estrategia de marketing clara, con objetivos y estadisticas, analizando el momento oportuno de lanzamiento.
+				</p>
+			</li>
+			<li class="servicies-item">
+				<i class="fab fa-drupal title-icon"></i>
+				<h3>Beats</h3>
+				<p>En caso de que aun no tengas una canción en mente, también podes realizar sesiones con beats para que puedas motivarte y darle tu propia identidad.</p>
+			</li>
+		</ul>
+	</section>
+    <section class="contact" id="contact-me">
+        <img src="img/lines-bg.png" alt="lineas" class="bg-img lines-bg">
+        <img src="img/square-bg.svg" alt="cuadrados" class="bg-img square-bg">
+        <img src="img/square-bg-bottom.svg" alt="cuadrados" class="bg-img square-bg-bottom">
+        <div class="contact-container">
+            <div class="title-container">
+                <h3 class="contact-title">Contáctame</h3>
+                <img src="img/title-decoration.svg" alt="subrayado de texto" class="title-decoration">
+            </div>
+            <form action="" class="form">
+                <div class="name-container form-container">
+                    <label for="Nombre" class="name-label">Nombre*</label>
+                    <input type="text" name="name" required>
+                </div>
+                <div class="mail-container form-container">
+                    <label for="Email" class="name">E-mail*<span class="mail-example">(ejemplo@ejemplo.com)</span></label>
+                    <input type="email" name="email" required>    
+                </div>
+                <div class="company-container form-container">
+                    <label for="" class="company-label">Número de teléfono</label>
+                    <input type="text" name="company">
+                </div>
+                <div class="msg-container form-container">
+                    <label for="" class="msg-label">Mensaje*</label>
+                    <textarea name="message" id="" cols="70" rows="10"required ></textarea>
+                </div>
+                <div class="form-button-container">
+                    <input type="submit" value="Enviar Mensaje" class="form-button">
+                </div>
+            </form>
+            <div class="social-media-container">
+                <h3 class="social-media-title">Redes Sociales</h3>
+                <ul class="social-media-list">
+                    <li class="social-media-list__item"><a href="#" title="Instagram" class="social-media-link"></a></li>
+                    <li class="social-media-list__item"><a href="#" title="Youtube" class="social-media-link"></a></li>
+                    <li class="social-media-list__item"><a href="#" title="Facebook" class="social-media-link"></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <audio id="backing-track">
+		<source src="backtrack2.aac" type="audio/aac">
+	</audio>
+</body>
+</html>
