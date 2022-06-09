@@ -13,9 +13,11 @@ document.getElementById('form')
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
       btn.value = 'Enviar mensaje';
-      alert('Sent!');
+      //alert('Sent!');
+      window.location.href= 'success-email.html';
     }, (err) => {
       btn.value = 'Enviar mensaje';
-      alert(JSON.stringify(err));
+      //alert(JSON.stringify(err));
+      window.location.href= 'error-email.html';
     });
 });

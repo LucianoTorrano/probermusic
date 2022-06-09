@@ -210,7 +210,8 @@ a {
 .button-link:hover{
 	transition: .3s;
 	transform: translate(-.1em,-.1em);
-	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);}
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
 
 /*******************/
 /*****Servicies*****/
@@ -363,22 +364,11 @@ textarea:focus, input:focus{
 	color: var(--secondary-color);
 	cursor: pointer;
 }
-.form-button-container::after{
-    content: '';
-    position: absolute;
-    bottom: -3px;
-    left: 0;
-    width: 0%;
-    height: 4px;
-    background-color:var(--send-massege-btn-hover-color);
-}
-.form-button-container:hover::after{
-    width: 100%;
-    transition: .3s;
-}
+
 .form-button:hover{
-    background-color: var(--main-text-color) ;
-    transition: .4s;
+	transition: .3s;
+	transform: translate(-.1em,-.1em);
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 .social-media-title{
 	font-size: 4em;
