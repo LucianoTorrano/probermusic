@@ -38,8 +38,8 @@ body{
 	grid-template-columns: 20% 65% 15% 0%;
 	padding: .5em 0;
 	color: var(--main-text-color);
-	z-index: 300;
-    height: 2em;
+	z-index: 400;
+    height: 2.5em;
 	margin: auto;
 }
 .nav-logo{
@@ -56,8 +56,8 @@ body{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	align-items: center;
 	letter-spacing: 1px;
+	padding: 0.5em 0;
 }
 
 a {
@@ -76,7 +76,7 @@ a {
 
 .nav-sound{
 	text-align: right;
-	padding-right: 2.5rem;
+	padding: 0.5em 2em;
 }
 
 #sound{
@@ -88,8 +88,8 @@ a {
 }
 
 .nav-sound i{
-	font-size: 25px;
-	padding-top: 9px;
+	font-size: 1.5em;
+	
 }
 
 /*********************/
@@ -117,12 +117,12 @@ a {
 	font-weight: 550;
 	font-family: 'Medula One', cursive;
 	letter-spacing: .016em;
-	padding-left: 2.5rem;
+	padding-left: 2rem;
 	color: var(--secondary-color);
 }
 
 .banner-title span{
-	font-size: 130px;
+	font-size: 1em;
 	font-weight: 550;
 	font-family: 'Medula One', cursive;
 	letter-spacing: 2px;
@@ -161,6 +161,7 @@ a {
 	text-align: center;
 	font-size: 6em;
 	z-index: 10;
+	position: relative;
 	padding: 1em;
 }
 .about-title__span{
@@ -169,10 +170,11 @@ a {
 	font-family: 'Medula One', cursive;
 }
 .about-text{
-	text-align: left;
+	text-align: justify;
 	width: 45%;
 	margin: auto;
 	z-index: 10;
+	position: relative;
 	padding-bottom: 8em;
 }
 .button-container{
@@ -257,10 +259,6 @@ a {
 .servicies-item h3{
 	font-size: 30px;
 	color: var(--main-color);
-}
-
-.servicies-item:hover{
-	transform: scale(1.05);
 }
 
 .servicies-item .title-icon{
@@ -393,4 +391,193 @@ textarea:focus, input:focus{
 
 .social-media__item i:hover{
 	color: var(--main-color);
+}
+/*burger btn*/
+
+.menuResponsive-btn{
+	height: 50px;
+	width: 50px;
+	position: relative;
+	border-radius: 3px;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	overflow: hidden;
+	background-color: transparent;
+}
+
+.menuResponsive-btn .btn-line{
+	position: absolute;
+	height: 4.5px;
+	width: 75%;
+	background-color: var(--main-color);
+	border-radius: 40px;
+	transition: .5s;
+}
+
+.menuResponsive-btn.inactive .btn-line:nth-child(1){
+	width: 50%;
+	left: 6px;
+	transform: translateY(-10px);
+}
+
+.menuResponsive-btn.inactive .btn-line:nth-child(2){
+	transform: translateY(10px);
+	width: 30%;
+	left: 6px;
+}
+
+.menuResponsive-btn.inactive .btn-line:nth-child(3){
+	transform: translateY(0);
+}
+
+.menuResponsive-btn.active .btn-line:nth-child(1){
+	width: 75%;
+	transition: .5s;
+	transform: translateY(0px) rotate(45deg);
+}
+
+.menuResponsive-btn.active .btn-line:nth-child(2){
+	transform: translateY(0px) rotate(315deg);
+	width: 75%;
+	transition-delay: .3s;
+}
+
+.menuResponsive-btn.active .btn-line:nth-child(3){
+	transform: translateX(150px);
+}
+
+@media all and (max-width:1600px){
+	.lines-bg{
+		display: none;
+	}
+	.square-bg-bottom{
+		left: 5%;
+	}
+}
+@media all and (max-width:1200px){
+	.pablo-img{
+		width: 23em;
+	}
+	.about-text{
+		margin: 0 20% 0 auto;
+	}
+	.button-bg-container{
+		width: 65%;
+	}
+	.button-link{
+		font-size: 1.2em;
+	}
+}
+@media all and (max-width:1080px){
+	.banner-title{
+		font-size: .8em;
+	}
+	#sound{
+		display: none;
+	}
+	.menuResponsive-btn{
+		display: flex;
+	}
+	.nav-container{
+		grid-template-columns: 25% 62% 13%;
+	}
+	.nav-options{
+		position:absolute;
+		height: 100vh;
+		width: 100%;
+		background-color: var(--secondary-color);
+		top: 2em;
+		right: 0;
+		flex-direction: column;
+		transform: translateY(-105%);
+		transition: transform 0.5s ease-in;
+		z-index: 0;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+	.nav-options__item{
+		opacity: 0;
+	}
+	.nav-options__item a,i{
+		opacity: 1;
+		font-size: 1.5em;
+	}
+	.nav-active{
+		transform: translateY(0);
+	}
+	.servicies-list{
+		justify-content: space-evenly;
+	}
+	.about-text{
+		margin: 0 15% 0 auto;
+	}
+}
+@media all and (max-width:930px){
+	.pablo-img{
+		width: 19.5em;
+	}
+	.banner-title{
+		font-size: .65em;
+	}
+	.button-bg-container{
+		width: 80%;
+	}
+}
+
+@media all and (max-width:680px){
+	.nav-logo{
+		padding-left:.5em ;
+	}
+	.banner-container{
+		background: url(img/hero-responsive-bg.jpg);
+		background-size: cover;
+		background-position: right;
+	}
+	.about-title{
+		padding: 1em 0 .5em 0;
+	}
+	.pablo-img{
+		position: relative;
+		width: 18em;
+		padding-bottom: 2em;
+		top: 0rem;
+	}
+	.about-text{
+		margin: auto;
+		width: 85%;
+		font-size: .85em;
+	}
+	.button-bg-container{
+		width: 100%;
+	}
+	.button-link{
+		font-size: .8em;
+	}
+	.phone-img{
+		width: 13em;
+		top: -9.5em;
+	}
+	.square-bg{
+		right: 50%;
+		transform: translateX(50%);
+	}
+	.square-bg-bottom{
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
+/*fade menu responsive animation*/
+
+@keyframes navLinkFade{
+	from{
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+	to{
+		opacity: 1;
+		transform: translateY(0);
+	}
 }

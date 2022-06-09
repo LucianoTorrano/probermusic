@@ -125,3 +125,12 @@
 .error-hover i:hover{
     color: var(--error-color);
 }
+
+@media all and (max-width:1600px){
+	.lines-bg{
+		display: none;
+	}
+	.square-bg-bottom{
+		left: 5%;
+	}
+}
