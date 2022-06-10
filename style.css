@@ -21,6 +21,14 @@
 body{
     background-color: var(--secondary-color);
 }
+body::-webkit-scrollbar{
+	width: 9px;
+	background-color: var(--secondary-color);
+}
+
+body::-webkit-scrollbar-thumb{
+	background: var(--main-color);
+}
 
 /*******************/
 /****** NAV ********/

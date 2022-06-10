@@ -13,6 +13,18 @@
     --text-color: #000;
     --btn-text-color: #fff;
 }
+
+body::-webkit-scrollbar{
+	width: 7px;
+	background-color: var(--secondary-color);
+}
+
+body::-webkit-scrollbar-thumb{
+	background: var(--main-color);
+	border-radius: 3px;
+}
+
+
 .error-bg-color{
     background-color: var(--error-color);
 }
