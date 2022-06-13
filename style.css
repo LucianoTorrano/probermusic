@@ -99,7 +99,6 @@ a {
 	font-size: 1.5em;
 	
 }
-
 /*********************/
 /**** HERO SECTION ***/
 /*********************/
@@ -347,6 +346,8 @@ input,textarea{
     font-size: 1.1em;
     font-weight: 600;
 	resize: none;
+	position: relative;
+	z-index: 100;
 }
 textarea:focus, input:focus{
     outline: none;
@@ -376,6 +377,13 @@ textarea:focus, input:focus{
 	transform: translate(-.1em,-.1em);
 	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type=number] { -moz-appearance:textfield; }
 .social-media-title{
 	font-size: 4em;
 	text-align: center;
@@ -400,6 +408,21 @@ textarea:focus, input:focus{
 .social-media__item i:hover{
 	color: var(--main-color);
 }
+
+/*FOOTER*/
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background-color: var(--items-font-color);
+    color: var(--main-color);
+    gap: 50px;
+    font-size: .9em;
+}
+
+
 /*burger btn*/
 
 .menuResponsive-btn{
@@ -575,6 +598,10 @@ textarea:focus, input:focus{
 		left: 50%;
 		transform: translateX(-50%);
 	}
+	.footer{
+        gap: 10px;
+        flex-direction: column;
+    }
 }
 
 /*fade menu responsive animation*/

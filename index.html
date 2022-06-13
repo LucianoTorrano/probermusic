@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Probermusic es un sello discográfico que busca hacer brillar a sus artistas. Si buscas un productor musical para grabar tus canciones, no dudes en consultarme.">
+    <meta name="keywords" content="Productor musical, Probermusic, artistas, sello discográfico">
+    <meta name="author" content="Luciano Torrano">
     <title>Probermusic</title>
     <link rel="icon" href="img/window-icon.svg">
     <script src="https://kit.fontawesome.com/5cd688c4de.js" crossorigin="anonymous"></script>
@@ -14,7 +17,7 @@
 <body>
     <div class="nav-container">
         <nav class="nav">
-            <div class="nav-logo"><a href="#">ProberMusic</a></div>
+            <div class="nav-logo"><a href="#" title="Inicio">ProberMusic</a></div>
             <ul class="nav-options">
                 <li class="nav-options__item"><a href="#"><i class="fas fa-home"></i>Inicio</a></li>
                 <li class="nav-options__item"><a href="#about"><i class="far fa-user"></i>Sobre Mi</a></li>
@@ -134,9 +137,17 @@
             </div>
         </div>
     </section>
+    <footer class="footer">
+        <p>© Todos los derechos reservados.</p>
+        <p>Desarrollo Web realizado por Luciano Torrano </p>
+    </footer>
     <audio id="backing-track">
 		<source src="backtrack2.aac" type="audio/aac">
 	</audio>
+    <!-- GSAP CDN-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <!-- GSAP SCROLL TRIGGER-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript" src="email-config.js"></script>
     <script src="send-email.js"></script>

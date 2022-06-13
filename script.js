@@ -60,3 +60,40 @@ function linkFade(linkList){
 		}
 	})
 }
+/* GSAP SCROLL ANIMATION */
+let tl1 = gsap.timeline({
+    scrollTrigger:{
+        trigger:".about",
+        ease: Power2.easeOut,
+        start: "top bottom"
+    }
+});
+
+    tl1.from('.about-title',{opacity:0,duration:1.5 })
+        .from('.about-text',{opacity:0,duration:1},'+.3')
+		.from('.pablo-img',{x:-100,opacity:0,duration:1},'-=1.5')
+		.from('.abstract-bg',{x:100,opacity:0,duration:1},'-=1.5')
+        .from('.button-container',{opacity:0,duration:1},'-=1.5')
+
+let tl2 = gsap.timeline({
+	scrollTrigger:{
+		trigger:".servicies-container",
+		ease: Power2.easeOut,
+		start: "top bottom"
+	}
+});
+
+	tl2.from('.servicies-title',{opacity:0,duration:1},'-=1.5')
+		.from('.servicies-item',{y:40,opacity:0,duration:1},'-=.9')
+
+
+let tl3 = gsap.timeline({
+	scrollTrigger:{
+		trigger:".contact",
+		ease: Power2.easeOut,
+		start: "top bottom"
+	}
+});
+
+	tl3.from('.title-decoration',{x:-40,opacity:0,duration:1.5})
+		.from('.bg-img',{opacity:0,duration:1.5},'-=1.5')
