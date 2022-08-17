@@ -2,7 +2,7 @@
 
 <h3><b>English:</b></h3>
 <br>
-Website made for the music productor Pablo Robert.<br>
+Website made for the music producer Pablo Robert.<br>
 - You can check the designs made for this web: https://www.figma.com/file/jFMm3eihh7UpaMRTXyCOEz/Probermusic-web?node-id=0%3A1 <br>
 - You can check the web result here: https://www.probermusic.com <br>
 <br>
